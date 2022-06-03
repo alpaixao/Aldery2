@@ -35,16 +35,52 @@ const bandeiras = [
 ["eua", ["azul", "branco", "vermelho"]]
 ];
 console.log (bandeirs[2][1]);
-*/
+
 
 //chamando um array vazio
 
 let  meuArray  =  [ "aldeia" ,  "lima" ,  "paixao" ]
-let  meuArray  =  new  Array ( )  // dentro dos pares podemos definir o tamanho fixor de nomes 2 números de posições ou definir os nomes
+let  meuArray2  =  new  Array ( )  // dentro dos pares podemos definir o tamanho fixo de nomes 2 números de posições ou definir os nomes
 let  meuArray3  =  new  Array ( "roberta" ,  "tiemi" )
 
-consola . tabela ( meuArray )
+console . log ( meuArray )
 
-consola . tabela ( meuArray2 )
+console . log ( meuArray2 )
 
-consola . tabela ( meuArray3 )
+console . log ( meuArray3 )
+
+ou pode ser usando table que mostra um formato tabular
+
+console . table ( meuArray )
+
+console . table ( meuArray2 )
+
+console . table ( meuArray3 )
+*/
+// adcioonar, remover ou substituir os arrays
+
+let frutas = new Array ("abacaxi")
+
+// utilizando o metodo PUSH, ele vai adicionar um novo elemento e retornar um novo tamanho do array. o modo push adicionar ao final do array
+
+frutas.push ("banana");
+frutas.push("maça");
+frutas.push ("morango");
+// temos tb a funçao unshift. Essa funçao vai incluir o elementos no inicio do array
+frutas.unshift("tangerina") 
+
+//console.table(frutas);
+
+console.log(frutas.length) // essa função mostra o tamanho total de array
+
+// REMOVENDO OS ARRAUYS  //USANDO O POP
+
+//O pop remove o ultimo elemento do array
+
+//frutas.pop();// exclui o uultimo elemento
+//frutas.shift();// exclui o primeiro elemento
+frutas.splice(0);//exclui elementos do meio. uso o index (1) eliminta um item do index  - - - -  no 2º() eliminta abaixo do index o tanto que eu colocar  
+console.table(frutas);
+
+
+
